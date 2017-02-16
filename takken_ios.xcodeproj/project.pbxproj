@@ -14,6 +14,7 @@
 		7AFB63441E555B0200278F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFB63421E555B0200278F58 /* LaunchScreen.storyboard */; };
 		7AFB634F1E555B0200278F58 /* takken_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB634E1E555B0200278F58 /* takken_iosTests.swift */; };
 		7AFB635A1E555B0200278F58 /* takken_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB63591E555B0200278F58 /* takken_iosUITests.swift */; };
+		9B49E873C738D38BD46FB881 /* Pods_takken_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7CE0146552E152B087FCD1 /* Pods_takken_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7CE0146552E152B087FCD1 /* Pods_takken_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takken_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFB63361E555B0200278F58 /* takken_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takken_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFB63391E555B0200278F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFB633B1E555B0200278F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		7AFB63551E555B0200278F58 /* takken_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takken_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFB63591E555B0200278F58 /* takken_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takken_iosUITests.swift; sourceTree = "<group>"; };
 		7AFB635B1E555B0200278F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA7774C9FE9EE87C5A14DF9 /* Pods-takken_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takken_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-takken_ios/Pods-takken_ios.release.xcconfig"; sourceTree = "<group>"; };
+		A0BDF2855FB00015EC47368E /* Pods-takken_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takken_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takken_ios/Pods-takken_ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B49E873C738D38BD46FB881 /* Pods_takken_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3673C30D2A6A8A1B26B461EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C7CE0146552E152B087FCD1 /* Pods_takken_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CEF70D806ABC504EC1759DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDF2855FB00015EC47368E /* Pods-takken_ios.debug.xcconfig */,
+				7CA7774C9FE9EE87C5A14DF9 /* Pods-takken_ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AFB632D1E555B0100278F58 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				7AFB634D1E555B0200278F58 /* takken_iosTests */,
 				7AFB63581E555B0200278F58 /* takken_iosUITests */,
 				7AFB63371E555B0200278F58 /* Products */,
+				3CEF70D806ABC504EC1759DA /* Pods */,
+				3673C30D2A6A8A1B26B461EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AFB635E1E555B0200278F58 /* Build configuration list for PBXNativeTarget "takken_ios" */;
 			buildPhases = (
+				C2C1EAD7A44D10427A50C79C /* [CP] Check Pods Manifest.lock */,
 				7AFB63321E555B0100278F58 /* Sources */,
 				7AFB63331E555B0100278F58 /* Frameworks */,
 				7AFB63341E555B0100278F58 /* Resources */,
+				A6857A6858CA3AF563998159 /* [CP] Embed Pods Frameworks */,
+				193372231F538AC26FCF0FA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193372231F538AC26FCF0FA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-takken_ios/Pods-takken_ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6857A6858CA3AF563998159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-takken_ios/Pods-takken_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C1EAD7A44D10427A50C79C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AFB63321E555B0100278F58 /* Sources */ = {
@@ -408,6 +483,7 @@
 		};
 		7AFB635F1E555B0200278F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0BDF2855FB00015EC47368E /* Pods-takken_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = takken_ios/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		7AFB63601E555B0200278F58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA7774C9FE9EE87C5A14DF9 /* Pods-takken_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = takken_ios/Info.plist;
